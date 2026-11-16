@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Manage Orders - Ward Store</title>
+  <link rel="stylesheet" href="manage-orders.css">
+</head>
+<body>
+
+  <div class="container">
+    
+    <!-- القائمة الجانبية (Sidebar) -->
+    <aside class="sidebar">
+      <h2 class="logo">Ward Store</h2>
+      <ul>
+        <li><a href="#">Dashboard</a></li>
+        <li><a href="manage-users.html">Users</a></li>
+        <li><a href="#">Messages</a></li>
+      </ul>
+    </aside>
+
+    <!-- المحتوى الرئيسي -->
+    <main class="content">
+      <h1>Manage Orders</h1>
+
+      <!-- أزرار الفلترة والبحث -->
+      <div class="top-bar">
+        <div class="tabs">
+          <button class="active">All</button>
+          <button>Processing</button>
+          <button>Shipped</button>
+          <button>Delivered</button>
+        </div>
+        <input type="text" placeholder="Search order...">
+      </div>
+
+      <!-- جدول الأوردرات -->
+      <table>
+        <thead>
+          <tr>
+            <th>Order ID</th>
+            <th>Customer</th>
+            <th>Product</th>
+            <th>Date</th>
+            <th>Total</th>
+            <th>Status</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>#12345</td>
+            <td>Omar Ali</td>
+            <td>Red Roses Bouquet</td>
+            <td>Apr 20, 2025</td>
+            <td>$29.99</td>
+            <td><span class="status delivered">Delivered</span></td>
+            <td><button class="btn-view">View</button></td>
+          </tr>
+          <tr>
+            <td>#12344</td>
+            <td>Abdalla Ahmed</td>
+            <td>Tulip Dream</td>
+            <td>Apr 18, 2025</td>
+            <td>$24.99</td>
+            <td><span class="status shipped">Shipped</span></td>
+            <td><button class="btn-view">View</button></td>
+          </tr>
+          <tr>
+            <td>#12343</td>
+            <td>Toqa Khaled</td>
+            <td>Mixed Happiness</td>
+            <td>Apr 15, 2025</td>
+            <td>$39.99</td>
+            <td><span class="status processing">Processing</span></td>
+            <td><button class="btn-view">View</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </main>
+
+  </div>
+
+</body>
+</html>
