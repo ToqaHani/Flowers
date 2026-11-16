@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Manage Users - Bloom & Joy</title>
+  <link rel="stylesheet" href="manage-users.css">
+</head>
+<body>
+
+  <div class="container">
+    
+    <!-- القائمة الجانبية (Sidebar) -->
+    <aside class="sidebar">
+      <div class="logo">
+        <h2>Ward Store</h2>
+      </div>
+      <ul>
+        <li><a href="#">Dashboard</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="manage-orders.html">Orders</a></li>
+        <li class="active"><a href="manage-users.html">Users</a></li>
+        <li><a href="#">Messages</a></li>
+      </ul>
+    </aside>
+
+    <!-- المحتوى الرئيسي -->
+    <main class="content">
+      <h1>Manage Users</h1>
+
+      <!-- أزرار الفلترة والبحث -->
+      <div class="top-bar">
+        <div class="tabs">
+          <button class="active">All Users</button>
+          <button>Customers</button>
+          <button>Admins</button>
+        </div>
+        <input type="text" placeholder="Search user...">
+      </div>
+
+      <!-- جدول المستخدمين -->
+      <table>
+        <thead>
+          <tr>
+            <th>User ID</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Role</th>
+            <th>Orders</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>#U01</td>
+            <td>Toqa Khaled</td>
+            <td>toqa.kh@example.com</td>
+            <td><span class="role admin">Admin</span></td>
+            <td>-</td>
+            <td><button class="btn-delete">Delete</button></td>
+          </tr>
+          <tr>
+            <td>#U02</td>
+            <td>Ahmed Ali</td>
+            <td>ahmed@example.com</td>
+            <td><span class="role customer">Customer</span></td>
+            <td>5</td>
+            <td><button class="btn-delete">Delete</button></td>
+          </tr>
+          <tr>
+            <td>#U03</td>
+            <td>Sara Mohamed</td>
+            <td>sara.m@example.com</td>
+            <td><span class="role customer">Customer</span></td>
+            <td>3</td>
+            <td><button class="btn-delete">Delete</button></td>
+          </tr>
+          <tr>
+            <td>#U04</td>
+            <td>Nour Hassan</td>
+            <td>nour.h@example.com</td>
+            <td><span class="role customer">Customer</span></td>
+            <td>1</td>
+            <td><button class="btn-delete">Delete</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </main>
+
+  </div>
+
+</body>
+</html>
