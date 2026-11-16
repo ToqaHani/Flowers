@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #F9F6F2;
+  color: #333;
+}
+
+.container {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* السايدبار */
+.sidebar {
+  width: 220px;
+  background-color: #FFFFFF;
+  padding: 25px 15px;
+  border-right: 1px solid #EAE4DD;
+}
+
+.logo {
+  color: #C84B61;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar ul li {
+  margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+  display: block;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: #555;
+  border-radius: 8px;
+}
+
+.sidebar ul li.active a,
+.sidebar ul li a:hover {
+  background-color: #C84B61;
+  color: #FFFFFF;
+}
+
+/* المحتوى */
+.content {
+  flex: 1;
+  padding: 30px;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+/* شريط البحث والأزرار */
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.tabs button {
+  padding: 8px 15px;
+  border: 1px solid #DDD;
+  background: #FFF;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.tabs button.active {
+  background-color: #C84B61;
+  color: #FFF;
+  border-color: #C84B61;
+}
+
+.top-bar input {
+  padding: 8px 12px;
+  border: 1px solid #DDD;
+  border-radius: 6px;
+  width: 220px;
+}
+
+/* الجدول */
+table {
+  width: 100%;
+  background: #FFF;
+  border-collapse: collapse;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+th, td {
+  padding: 14px;
+  text-align: left;
+  border-bottom: 1px solid #EEE;
+}
+
+th {
+  background-color: #F5E6E4;
+  color: #333;
+}
+
+/* حالات الأوردر */
+.status {
+  padding: 5px 10px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.delivered {
+  background-color: #E3F5EA;
+  color: #1F7A4C;
+}
+
+.shipped {
+  background-color: #E6F0FA;
+  color: #2563EB;
+}
+
+.processing {
+  background-color: #FEF3C7;
+  color: #D97706;
+}
+
+/* زرار التفاصيل */
+.btn-view {
+  padding: 6px 12px;
+  background-color: #C84B61;
+  color: #FFF;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
